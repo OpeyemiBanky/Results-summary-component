@@ -1,0 +1,142 @@
+/* Importing the 'Hanken Grotesk' and 'Outfit' fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Outfit&display=swap');
+
+/* Setting the font family for the entire page */
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Styling the main container */
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling the left section of the container */
+.left{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color:  hsl(0, 0%, 100%);
+    width: 250px;
+    height: fit-content;
+    padding: 12px;
+    padding-top: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Styling the circular result display */
+.circ{
+    background-image: linear-gradient( hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.pC{
+    margin: 0 auto;
+    padding-top: 25px;
+}
+small{
+    opacity: 0.5;
+}
+.p1{
+    font-weight: 500;
+    font-size: 20px;
+}
+.p2{
+    font-size: small;
+    opacity: 0.8;
+}
+
+/* Styling the right section of the container */
+.right{
+    padding: 20px;
+    width: 250px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 3px 3px 5px hsl(221, 100%, 96%);
+    border-left: none;
+    line-height: 2px;
+}
+h4{
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+}
+
+/* Styling the individual score sections */
+.R1{
+    background-color: hsl(0, 100%, 97%);
+    display: flex;
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.R1 h5{
+    color: hsl(0, 100%, 67%);
+    margin-left: 5px;
+}
+.R2{
+    background-color: hsl(39, 78%, 96%);
+    display: flex;
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.R2 h5{
+    color: hsl(39, 100%, 56%);
+    margin-left: 5px;
+}
+.R3{
+    background-color: hsl(170, 30%, 96%);
+    display: flex;
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.R3 h5{
+    color: hsl(166, 100%, 37%);
+    margin-left: 5px;
+}
+.R4{
+    background-color: hsl(210, 57%, 97%);
+    display: flex;
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.R4 h5{
+    color: hsl(234, 85%, 45%);
+    margin-left: 5px;
+}
+
+/* Styling the continue button */
+button{
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+}
+button:hover{
+    background-color: hsl(241, 81%, 54%);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width:700px){
+    .container{
+        flex-direction: column;
+        width: 375px;
+        height: 100vh;
+    }
+}
